@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/51f44d992f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" alt="" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>Hi There, <br> I'm Shubham Kumar</h1>
+                <p class="inline">I Am Into</p>
+                <p class="inline" id="text"></p>
+                <div class="cursor"></div> <!-- Cursor element -->
+            </div>
+            <div style="display: flex; width: 50%; column-gap:10px; justify-content: flex-start; text-align: left;">
+                <div>
+                    <a href="images/my-cv.pdf" download class="btn btn2" style="margin-right: 10px;">Download CV</a>
+
+                </div>
+                <div class="social-icons" style="margin-top:15px;">
+                    <a href="https://github.com/sbmraj03" class="social-icons" target="_blank">
+                        <i class="fab fa-github" style="font-size:60px;"></i>
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+
+
+
+ <!-- -----------------------------------------About---------------------------------------  -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png" style="width:392px; height: 616px;">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        My name is Shubham Kumar | <span style="color:#ff004f">4th year ETC UG at IIEST, Shibpur.</span> <br><br>
+                        I'm a web developer passionate about creating user-friendly applications. I enjoy problem-solving and applying data structures and algorithms to improve my programming skills.
+                    </p>
+                    <div class="tab-titles">
+                        <section class="tab-links active-link" onclick="opentab('problem-solving', event)">Problem-Solving
+                            
+                        </section>
+                        <section class="tab-links" onclick="opentab('education',event)">Education
+
+                        </section>     
+                    </div>
+                    
+                    <div class="tab-contents active-tab" id="problem-solving">
+                        <section>
+                            <h2>My Coding Profiles</h2>
+                            <p style="font-weight:bold; color:#f70d57; margin-top:6px;">Leetcode</p>
+                            <ul style="list-style-type: none; padding-left: 20px;">
+                                
+                                <li class="list">Solved over 360+ problems on LeetCode.</li>
+                                <li class="list">Max Rating 1550+.</li>
+                                <li class="list">Ranked in the top 35% on LeetCode.</li>
+            
+                            </ul>
+                        
+                            <p style="font-weight:bold; color:#f70d57">Codeforces</p>
+                            <p>
+                                <ul>
+                                
+                                    <li class="list">Pupil at Codeforces</li>
+                                    <li class="list">Max Rating 1200+.</li>
+                
+                                </ul>
+                                
+                            </p>
+                            <div class="social-icons" style="display: flex; justify-content:safe;">
+                        
+                                <div>
+                                  <a href="https://leetcode.com/sbmraj03/" target="_blank">
+                                    <img src="images/coding/lc.png" alt="leetcode" class="social-logo" style="height:60px; width:60px; border-radius: 50%;"></a>
+                                  </div>
+                                <div>
+                                  <a href="https://codeforces.com/profile/shubh_S.R" target="_blank">
+                                    <img src="images/coding/cf.png" alt="leetcode" class="social-logo" style="height:60px; width:60px; border-radius:50%;"></a>
+                                  </div>
+                            </div>
+
+                        </section>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <section class="education" id="education">
+    
+                            <h1 class="heading"><i class="fas fa-graduation-cap"></i> My <span>Education</span></h1>
+                        
+                            <div class="box-container" style="margin-top:0.5rem;">
+                        
+                              <div class="box">
+                                <div class="image">
+                                  <a href="https://www.iiests.ac.in/" target="_blank" style="text-decoration:none">
+                                    <img draggable="false" src="images/clg.png" alt="" style="height: 80px; width: 80px; margin-left:2.5rem;">
+                        
+                                </a></div><a href="https://www.iiests.ac.in/" target="_blank">
+                                </a><div class="content"><a href="https://www.iiests.ac.in/" target="_blank">
+                                  <h3 style="margin-bottom:0.2rem;">B.Tech in Electronics & Telecommunication.</h3>
+                                  <p>4th year | IIEST, shibpur </p>
+                                  <p>CGPA: 7.62 (6th sem) </p>
+                                  <h4 style="margin-top:0.2rem">2021-2025 | Pursuing</h4>
+                                  </a>
+                                </div>
+                              </div>
+                        
+                              <div class="box">
+                                <div class="image">
+                                  <a href="https://spmcudantpuri.ac.in/" target="_blank" style="text-decoration:none">
+                                    <img draggable="false" src="images/spmclg.png" alt="" style="height: 80px; width: 80px; margin-left:2.5rem;">
+                        
+                                </a></div><a href="https://spmcudantpuri.ac.in/" target="_blank">
+                                </a><div class="content"><a href="https://spmcudantpuri.ac.in/" target="_blank">
+                                  <h3 style="margin-bottom:0.2rem;">Intermediate (11th-12th)</h3>
+                                  <p>BSEB Board | S.P.M College, BiharSharif, Bihar </p>
+                                  <p>Perc: 82.6% </p>
+                                   <!-- <h4 style="margin-top:0.2rem">20XX-20XX | Pursuing</h4> -->
+                                   </a>
+                                </div>
+                              </div>
+                        
+                              <div class="box">
+                                <div class="image">
+                                  <a href="https://sjacademybiharsharif.com" target="_blank" style="text-decoration:none">
+                                    <img draggable="false" src="images/school.png" alt="" style="height: 80px; width: 80px; margin-left:2.5rem;">
+                        
+                                </a></div><a href="https://sjacademybiharsharif.com" target="_blank">
+                                </a><div class="content"><a href="https://sjacademybiharsharif.com" target="_blank">
+                                  <h3 style="margin-bottom:0.2rem;">High School (4th-10th)</h3>
+                                  <p>CBSE Board | ST. Joseph Academy, BiharSharif, Bihar</p>
+                                  <p>Perc: 95.2% </p>
+                                   <!-- <h4 style="margin-top:0.2rem">2021-2025 | Pursuing</h4> -->
+                                  </a>
+                                </div>
+                              </div>
+                        
+                            </div>
+                        </section>
+                        
+                    </div>
+                    
+                    
+                    
+
+                </div>
+                
+            </div>
+            
+        </div>
+    </div>
+    
+    <!-- ------------------------------------------------------------skills------------------------------------------------------------------  -->
+   
+   <div id="skills">
+       <div class="container-skills">
+           <h1 class="sub-title skill-title">Technical Skills</h1>
+        <section class="tech-stack">
+            <div class="container">
+                <div class="tech"><img src="images/skills/c.png" alt="img">C</div>
+                <div class="tech"><img src="images/skills/python.png" alt="img">Python</div>
+                <div class="tech"><img src="images/skills/react.png" alt="img">React</div>
+                <div class="tech"><img src="images/skills/html.png" alt="img">HTML5</div>
+                <div class="tech"><img src="images/skills/css.png" alt="img">CSS3</div>
+                <div class="tech"><img src="images/skills/js.png" alt="img">JavaScript</div>
+                <div class="tech"><img src="images/skills/sql.png" alt="img">SQL</div>
+                <div class="tech"><img src="images/skills/cpp.png" alt="img">C++</div>
+                <div class="tech"><img src="images/skills/mongodb.png" alt="img">MongoDB</div>
+                <div class="tech"><img src="images/skills/nodejs.png" alt="img">Node.js</div>
+                <div class="tech"><img src="images/skills/express.png" alt="img">Express.js</div>
+                <div class="tech"><img src="images/skills/tailwind.png" alt="img">Tailwind</div>
+                <div class="tech"><img src="images/skills/git.png" alt="img">Git</div>
+                <div class="tech"><img src="images/skills/github.png" alt="img">GitHub</div>
+                <div class="tech"><img src="images/skills/mysql.png" alt="img">MySQL</div>
+                <div class="tech"><img src="images/skills/pandas.png" alt="img">Pandas</div>
+                <div class="tech"><img src="images/skills/numpy.png" alt="img">Numpy</div>
+                <div class="tech"><img src="images/skills/seaborn.png" alt="img">Seaborn</div>
+                <div class="tech"><img src="images/skills/matplot.png" alt="img">Matplotlib</div>
+            </div>
+        </section>
+    </div>
+   </div>
+   
+   <!-- --------------------------------------portfolio------------------------------------------------------------------  -->
+   <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/myProjects/eduverse.png" alt="eduverse.png" height="465rem">
+                <div class="layer">
+                    <h3>Eduverse-Edtech Platform</h3>
+                    <p>A comprehensive platform enabling users to create, access, and evaluate educational materials. </p>
+                    <a href="https://github.com/sbmraj03/EduVerse-An-Edtech-Platform"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/myProjects/chatvox.png" alt="chatvox.png" height="465rem">
+                <div class="layer">
+                    <h3>ChatVox</h3>
+                    <p>Full-stack chat application with real-time communication and secure data storage.
+                    </p>   
+                    <a href="https://github.com/sbmraj03/ChatVox"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/myProjects/dev-detective.png" alt="" height="465rem">
+                <div class="layer">
+                    <h3>Dev Detective</h3>
+                    <p>A web application that fetches and displays GitHub user details, including repositories, followers, and activity statistics.</p>
+                    <a href="https://github.com/sbmraj03/devDetective"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/myProjects/weather.png" alt="" height="465rem">
+                <div class="layer">
+                    <h3>Weather-App</h3>
+                    <p>A web app that provides users with current weather highlights and a 7-day forecast for any city.</p>
+                    <a href="https://github.com/sbmraj03/Weather-App"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/myProjects/tic-tac-toe.png" alt="" height="465rem">
+                <div class="layer">
+                    <h3>Tic-Tac-Toe Game</h3>
+                    <p>a simple two-player game played on a 3x3 grid, where players alternately place their symbols (X or O) with the goal of getting three in a row.
+                    </p>
+                    <a href="https://github.com/sbmraj03/tic-tac-toe"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        
+            
+        </div>
+        
+    </div>
+   </div>
+   
+   <!-- ------------------------------------------contact----------------------------------------------  -->
+   <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> sumbamraj3@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> 6201709874</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/shubham-kumar-080852248/"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/sbmraj03"><i class="fab fa-github"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                </div>
+                <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>  
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Thanks for visiting my personal Portfolio <i class="fas fa-heart"></i> Website</p>
+        <div class="copyright2" style="margin-top:2px;"><p>Made by Shubham © 2024 </p></div>
+    </div>
+   </div>
+   
+   <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname, event) {
+        var clickedTab = event.currentTarget;
+        
+        setTimeout(function() {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            clickedTab.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }, 200);  // 500 milliseconds = 0.5 seconds
+    }
+</script>
+
+
+    <script>
+        
+        var sidemenu= document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right= "0";
+        }
+        function closemenu(){
+            sidemenu.style.right= "-200px";
+        }
+    </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbx2FOu4NIEntBven8rG2If6dviGVpmczPdcZtPBCx05Xlq61QNDQSmEKxJr14VboKgngA/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg= document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML= "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML= ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+
+<script>
+    const phrases = ["Problem Solving", "Web Development"];
+    let index = 0;
+    let currentPhrase = phrases[index];
+    let charCount = 0;
+    let building = true; // Flag to indicate whether we are building or reversing
+
+    function displayText() {
+        const displayedText = currentPhrase.slice(0, charCount);
+        document.getElementById("text").textContent = displayedText;
+
+        if (building) {
+            // Increase charCount until the full phrase is displayed
+            charCount++;
+            if (charCount > currentPhrase.length) {
+                building = false; // Switch to reversing when full phrase is displayed
+                setTimeout(displayText, 800); // Wait for 1 second before starting to reverse
+                return;
+            }
+        } else {
+            // Decrease charCount to reverse the phrase quickly
+            charCount--;
+            if (charCount < 0) {
+                // Switch to the next phrase
+                index = (index + 1) % phrases.length;
+                currentPhrase = phrases[index];
+                charCount = 0; 
+                building = true; 
+                setTimeout(displayText, 20); 
+                return;
+            }
+        }
+
+        const delay = building ? 120 : 40; // Slow for building, fast for reversing
+        setTimeout(displayText, delay);
+    }
+
+    displayText(); // Initial call to start the process
+</script>
+</body>
+</html>
